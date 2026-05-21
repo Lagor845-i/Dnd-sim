@@ -1,0 +1,14 @@
+Humanoid
+Beast
+Aberration
+Celestial
+Fiend
+Undead
+Construct
+Plant
+Fey
+Dragon
+Elemental
+Ooze
+Monstrosity
+Giant

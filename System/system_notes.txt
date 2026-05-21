@@ -1,0 +1,17 @@
+# Just helps for me so I can know what every condition is so I don't forget to write the rules for them.
+Condition types
+    Blinded
+    Charmed
+    Deafened
+    Exhaustion
+    Frightened
+    Grappled
+    Incapacitated
+    Invisible
+    Paralyzed
+    Petrified
+    Poisoned
+    Prone
+    Restrained
+    Stunned
+    Unconscious
