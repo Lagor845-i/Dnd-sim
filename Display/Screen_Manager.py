@@ -1,12 +1,16 @@
 import pygame
+from System import GameState
+from Display import UiState
 
 class Screen_Manager():
-    def __init__(self) -> None:
+    def __init__(self,game_state:GameState) -> None:
         self.typing = False
         self.typebuffer = []
+        self.game_state = game_state
+        self.ui_state = UiState()
 
     def Render(self):
-        pass
+        
 
     def Get_input(self,mouse_loc,key_buffer):
         for key in key_buffer:

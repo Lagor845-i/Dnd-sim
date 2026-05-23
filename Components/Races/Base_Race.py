@@ -1,10 +1,16 @@
 from abc import ABC
 
 from Components import Sight
+from Components import Features
 
-class BaseRace():
-    def __init__(self,Creature_type:str = "Humanoid",Size:str = "M",Speed:int = 30,Vision:Sight = Sight()) -> None:
-        pass
+class BaseRace(ABC):
+    def __init__(self,
+                 creature_type:str = "Humanoid",
+                 Size:str = "M",
+                 Speed:int = 30,
+                 Features:Features = Features(Sight())
+                 ) -> None:
+        self._creature_type = creature_type
 
     def on_turn_start(self):
         pass

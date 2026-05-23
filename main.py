@@ -1,12 +1,14 @@
 import pygame
 from Display import Screen_Manager
+from System import GameState
 
 class Game():
     def __init__(self) -> None:
         pygame.init()
         self.clock = pygame.time.Clock()
         self.window = pygame.display.set_mode((0,0),pygame.FULLSCREEN | pygame.DOUBLEBUF)
-        self.screen_manager = Screen_Manager()
+        self.game_state = GameState()
+        self.screen_manager = Screen_Manager(self.game_state)
     
     def Get_Input(self):
         key_buffer = []
