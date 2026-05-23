@@ -1,7 +1,10 @@
-from Components import AbilityScores, Statblock
-from Entity.Creature import Creature
+from Components.Ability_Scores import AbilityScores
+from Components.Features import Features
+from Components.Stat_Block import Statblock
+from Entity.NonPlayerCreature import NonPlayerCreature
 from Util.Vector import Vector
 
-class Monster(Creature):
-    def __init__(self, name: str, Image_id: str | None, Creature_id: str, Stats: Statblock, Ability_scores: AbilityScores, Features, Pos: Vector = Vector(0,0)) -> None:
-        super().__init__(name, Image_id, Creature_id, Stats, Ability_scores, Features, Pos)
+class Monster(NonPlayerCreature):
+    """Creatures that are used to attack the players but dont have an explained backstory"""
+    def __init__(self, name: str, Image_id: str | None, Creature_id: str, Stats: Statblock, Ability_scores: AbilityScores, Saves:list = [], Skills:list = [], Features: Features | None = None, Traits: list | None = None, Pos: Vector = Vector()) -> None:
+        super().__init__(name, Image_id, Creature_id, Stats, Ability_scores, Saves, Skills, Features, Pos)

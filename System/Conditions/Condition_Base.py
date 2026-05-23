@@ -1,6 +1,6 @@
 from abc import ABC,abstractmethod
 
-class Condition(ABC):
+class ConditionBase(ABC):
     def __init__(self,duration:int,target:str,giver:str) -> None:
         """
         Duration is the amount of turns before the effect fades.
@@ -10,33 +10,67 @@ class Condition(ABC):
         self.duration = duration
         self.target = target
         self.giver = giver
+        self.active = True
+
+    def decDuration(self):
+        self.duration -= 1
+        if self.duration == 0:
+            self.active = False
 
     @abstractmethod
-    def On_Application(self):
+    def on_turn_start(self):
         pass
 
     @abstractmethod
-    def On_Start_of_turn(self):
+    def on_turn_end(self):
         pass
 
     @abstractmethod
-    def On_Attack(self):
+    def before_attack_roll(self):
         pass
 
     @abstractmethod
-    def On_End_of_turn(self):
+    def after_attack_roll(self):
         pass
 
     @abstractmethod
-    def On_Expire(self):
+    def before_damage(self):
         pass
 
     @abstractmethod
-    def On_Death(self):
+    def after_damage(self):
         pass
 
     @abstractmethod
-    def On_Move(self):
+    def before_being_attacked_rolls(self):
+        pass
+
+    @abstractmethod
+    def after_being_attacked_rolls(self):
+        pass
+
+    @abstractmethod
+    def before_taking_damage(self):
+        pass
+
+    @abstractmethod
+    def after_taking_damage(self):
+        pass
+
+    @abstractmethod
+    def before_spell_cast(self):
+        pass
+
+    @abstractmethod
+    def after_spell_cast(self):
+        pass
+
+    @abstractmethod
+    def on_short_rest(self):
+        pass
+
+    @abstractmethod
+    def on_long_rest(self):
         pass
 
     def __str__(self) -> str:

@@ -12,11 +12,11 @@ class Features:
         self._Immunities = Immunities
         self._Traits = Traits
 
+    def getSight(self):
+        return self._Sight
+
     def getResistances(self):
         return self._Resistances
     
     def getImmunities(self):
         return self._Immunities
-    
-    def getTraits(self):
-        return self._Traits

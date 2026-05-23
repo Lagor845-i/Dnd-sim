@@ -1,19 +1,23 @@
 from random import randint
 
-def rolld4():
-    return randint(1,4)
-    
-def rolld6():
-    return randint(1,6)
+class DiceManager:
+    def __init__(self) -> None:
+        pass
 
-def rolld8():
-    return randint(1,8)
+    def rolld4(self):
+        return randint(1,4)
+        
+    def rolld6(self):
+        return randint(1,6)
 
-def rolld10():
-    return randint(1,10)
+    def rolld8(self):
+        return randint(1,8)
 
-def rolld12():
-    return randint(1,12)
+    def rolld10(self):
+        return randint(1,10)
 
-def rolld20():
-    return randint(1,20)
+    def rolld12(self):
+        return randint(1,12)
+
+    def rolld20(self):
+        return randint(1,20)
