@@ -3,10 +3,10 @@ from abc import ABC,abstractmethod
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from .Base_Class import BaseClass
+    from Components.Classes import BaseClass
 
 class BaseSubclass(ABC):
-    def __init__(self,ParentClass:BaseClass) -> None:
+    def __init__(self,ParentClass) -> None:
         self.ParentClass = ParentClass
     
     def event_handler(self,event):
@@ -41,4 +41,3 @@ class BaseSubclass(ABC):
 
     def on_long_rest(self):
         pass
- 

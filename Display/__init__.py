@@ -1,2 +1,2 @@
-from .Screen_Manager import Screen_Manager
+from .Screen_Manager import ScreenManager
 from .Ui_State import UiState
