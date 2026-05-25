@@ -1,0 +1,1 @@
+Hi welcome to the project! This is a little DND Sim I am trying to make. My goal is to make it simple for new players / DM's to start DND and allow for potentially larger parties. The project has just started and is currently not functional. I aim to have a working system in a few weeks.
