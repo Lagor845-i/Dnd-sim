@@ -3,6 +3,8 @@ class UiState:
         self._current_screen = ""
         self._widgets_layers = []
         self._currently_focused_widget = None
+        self.fps_counter = True
+        self.current_fps = 0
     
     def change_screen(self,screen_name:str) -> None:
         self._current_screen = screen_name

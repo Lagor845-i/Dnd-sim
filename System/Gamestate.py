@@ -2,12 +2,16 @@ from Entity import Creature
 
 class GameState:
     def __init__(self) -> None:
+        self.running = False
         self._current_creatures = {}
         self._game_packets = []
         self._input_packets = []
         self._current_turn:str | None = None
         self._initiative_order:list[str] = [] # Creature IDs
         self._in_battle = False
+
+    def stopGame(self):
+        self.running = False
     
     def addGamePacket(self,packet):
         self._game_packets.append(packet)
