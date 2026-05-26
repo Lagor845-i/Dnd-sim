@@ -1,5 +1,5 @@
-from Components.Ability_Scores import AbilityScores
-from Components.Classes import BaseClass
+from CreatureComponents.Ability_Scores import AbilityScores
+from CreatureComponents.Classes import BaseClass
 from Entity import Creature
 from Util.Vector import Vector
 

@@ -1,7 +1,7 @@
 from abc import ABC
 
-from Components import Sight
-from Components import Features
+from CreatureComponents import Sight
+from CreatureComponents import Features
 
 class BaseRace(ABC):
     def __init__(self,

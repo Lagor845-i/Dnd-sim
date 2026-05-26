@@ -1,0 +1,65 @@
+{
+    "name": "Test Fighter",
+    "race": "Human",
+    "class": "Fighter",
+    "level": 1,
+
+    "max_hp": 12,
+    "current_hp": 12,
+
+    "armor_class": 18,
+    "speed": 30,
+
+    "stats": {
+        "strength": 16,
+        "dexterity": 13,
+        "constitution": 15,
+        "intelligence": 10,
+        "wisdom": 12,
+        "charisma": 8
+    },
+
+    "modifiers": {
+        "strength": 3,
+        "dexterity": 1,
+        "constitution": 2,
+        "intelligence": 0,
+        "wisdom": 1,
+        "charisma": -1
+    },
+
+    "proficiency_bonus": 2,
+
+    "saving_throws": {
+        "strength": 5,
+        "constitution": 4
+    },
+
+    "skills": {
+        "athletics": 5,
+        "perception": 3,
+        "survival": 3
+    },
+
+    "weapon": {
+        "name": "Longsword",
+        "attack_bonus": 5,
+        "damage": "1d8+3",
+        "damage_type": "slashing"
+    },
+
+    "armor": {
+        "name": "Chain Mail",
+        "ac": 16
+    },
+
+    "shield": {
+        "name": "Shield",
+        "ac_bonus": 2
+    },
+
+    "features": {
+        "fighting_style": "Defense",
+        "second_wind_available": true
+    }
+}

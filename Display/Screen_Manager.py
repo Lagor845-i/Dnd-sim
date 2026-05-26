@@ -44,10 +44,12 @@ class ScreenManager():
                 pygame.quit()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
-                    if self.ui_state.get_current_screen() == "SettingsMenu":
+                    if self.ui_state.get_current_screen() == "SettingsMenu" or self.ui_state.get_current_screen() == "CharacterMenu" or self.ui_state.get_current_screen() == "MapCreator":
                         self.ui_state.change_screen("MainMenu")
-                    if self.ui_state.get_current_screen() == "MainMenu":
+                    elif self.ui_state.get_current_screen() == "MainMenu":
                         self.game_state.stopGame()
+                else:
+                    self.screens[self.ui_state.get_current_screen()].HandleKeys(event)
                         
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:

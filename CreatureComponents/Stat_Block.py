@@ -1,4 +1,4 @@
-from Components.Speed import Speed
+from CreatureComponents.Speed import Speed
 
 class Statblock():
     def __init__(self,HP:int,AC:int,Speed:Speed | int,Initiative:int) -> None:

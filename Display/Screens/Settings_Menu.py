@@ -17,7 +17,8 @@ class SettingsMenu(ScreenBase):
         self.settings_display.fill((0, 0, 0, 80))
         window.blit(self.settings_display,(0,0)) # Blit after filling settings.
         
-        
+    def HandleKeys(self,key_event):
+        pass
 
     def DetectClicks(self,pos):
         pass

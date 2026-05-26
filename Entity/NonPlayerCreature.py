@@ -1,6 +1,6 @@
-from Components.Ability_Scores import AbilityScores
-from Components.Features import Features
-from Components.Stat_Block import Statblock
+from CreatureComponents.Ability_Scores import AbilityScores
+from CreatureComponents.Features import Features
+from CreatureComponents.Stat_Block import Statblock
 from Util.Vector import Vector
 
 from .Creature import Creature

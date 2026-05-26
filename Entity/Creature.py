@@ -1,4 +1,4 @@
-from Components import AbilityScores
+from CreatureComponents import AbilityScores
 
 from Util import Vector
 from typing import Optional

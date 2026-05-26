@@ -18,3 +18,6 @@ class InGame(ScreenBase):
 
     def MouseEffect(self,mouse_loc):
         pass
+
+    def HandleKeys(self,key_event):
+        pass

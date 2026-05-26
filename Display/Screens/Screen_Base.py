@@ -22,3 +22,7 @@ class ScreenBase(ABC):
     @abstractmethod
     def MouseEffect(self,mouse_loc):
         pass
+    
+    @abstractmethod
+    def HandleKeys(self,key_event):
+        pass
